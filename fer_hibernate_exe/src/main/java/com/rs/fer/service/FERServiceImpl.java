@@ -278,8 +278,8 @@ public class FERServiceImpl implements FERService {
 				user.setLastname(resultSet.getString("LastName"));
 				user.setUsername(resultSet.getString("UserName"));
 				user.setPassword(resultSet.getString("password"));
-				user.setEmail(resultSet.getString("EmailId"));
-				user.setMobile(resultSet.getString("MobileNo"));
+				user.setEmailid(resultSet.getString("EmailId"));
+				user.setMobileno(resultSet.getString("MobileNo"));
 				
 				Address address=new Address();
 				address.setId(resultSet.getInt("Id"));
@@ -324,8 +324,8 @@ public class FERServiceImpl implements FERService {
 			statement.setString(3,user.getLastname());
 			statement.setString(4,user.getUsername());
 			statement.setString(5,user.getPassword());
-			statement.setString(6,user.getEmail());
-			statement.setString(7,user.getMobile());
+			statement.setString(6,user.getEmailid());
+			statement.setString(7,user.getMobileno());
 			statement.setInt(8,user.getId());
 			
 			

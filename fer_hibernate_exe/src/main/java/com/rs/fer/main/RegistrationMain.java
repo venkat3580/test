@@ -19,12 +19,12 @@ public class RegistrationMain {
 		User user = new User();
 
 		user.setFirstname("venkat");
-		user.setMiddlename("raO");
+		user.setMiddlename("eswarao");
 		user.setLastname("konidena");
-		user.setUsername("venkat");
-		user.setPassword("venkat");
-		user.setEmail("konide@rs.com");
-		user.setMobile("987654321");
+		user.setUsername("admin");
+		user.setPassword("admin");
+		user.setEmailid("konide@rs.com");
+		user.setMobileno("987654321");
 
 		boolean isRegister = ferService.registration(user);
 

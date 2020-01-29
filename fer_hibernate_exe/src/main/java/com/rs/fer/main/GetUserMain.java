@@ -22,8 +22,8 @@ public class GetUserMain {
 		System.out.println("LastName:"+user.getLastname());
 		System.out.println("UserName:"+user.getUsername());
 		System.out.println("Password:"+user.getPassword());
-		System.out.println("Email:"+user.getEmail());
-		System.out.println("Mobile:"+user.getMobile());
+		System.out.println("Email:"+user.getEmailid());
+		System.out.println("Mobile:"+user.getMobileno());
 		
 		
 		System.out.println("Id:"+user.getId());

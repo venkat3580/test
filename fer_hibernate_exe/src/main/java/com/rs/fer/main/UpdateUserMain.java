@@ -17,8 +17,8 @@ public class UpdateUserMain {
 		user.setLastname("gjhhh");
 		user.setUsername("hggffgf");
 		user.setPassword("54255");
-		user.setEmail("anilggh@gmail.com");
-		user.setMobile("55656565566");
+		user.setEmailid("anilggh@gmail.com");
+		user.setMobileno("55656565566");
 		user.setId(1);
 		
 		Address address=new Address();

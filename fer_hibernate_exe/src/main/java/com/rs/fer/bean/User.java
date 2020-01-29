@@ -34,9 +34,9 @@ public class User {
 	@Column
 	private String password;
 	@Column
-	private String email;
+	private String emailid;
 	@Column
-	private String mobile;
+	private String mobileno;
 	@Column
 	@OneToMany(fetch = FetchType.LAZY, targetEntity = Expense.class, cascade = CascadeType.ALL)
 	@JoinColumn(name = "userid", referencedColumnName = "id")
@@ -45,8 +45,6 @@ public class User {
 	@OneToOne(targetEntity = Address.class, cascade = CascadeType.ALL)
 	@JoinColumn(name = "userid", referencedColumnName = "id")
 	Address address;
-	 
-	
 
 	public int getId() {
 		return id;
@@ -96,20 +94,20 @@ public class User {
 		this.password = password;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getEmailid() {
+		return emailid;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
 	}
 
-	public String getMobile() {
-		return mobile;
+	public String getMobileno() {
+		return mobileno;
 	}
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
+	public void setMobileno(String mobileno) {
+		this.mobileno = mobileno;
 	}
 
 	public Set<Expense> getExpenses() {
@@ -119,6 +117,7 @@ public class User {
 	public void setExpenses(Set<Expense> expenses) {
 		this.expenses = expenses;
 	}
+
 	public Address getAddress() {
 		return address;
 	}
@@ -126,5 +125,5 @@ public class User {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	
+	 	
 }
